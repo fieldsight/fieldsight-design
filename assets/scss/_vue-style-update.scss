@@ -1,0 +1,54 @@
+.vue-treeselect:not(.vue-treeselect--disabled) .vue-treeselect__multi-value-item:not(.vue-treeselect__multi-value-item-disabled):hover .vue-treeselect__multi-value-item:not(.vue-treeselect__multi-value-item-new) .vue-treeselect__multi-value-item:not(.vue-treeselect__multi-value-item-new):hover,.vue-treeselect__multi-value-item {
+background: rgba(0, 98, 142, .1);
+    color: #00628E;
+}
+
+.vue-treeselect__value-remove {
+    border-left: 1px solid #ffffff;
+    color: #00628E;
+}
+
+.vue-treeselect__value-remove {
+    color: #00628E;
+}
+.vue-treeselect__control{
+border-radius: 0;
+padding-left: 8px;
+padding-right: 0;
+height: 42px;
+}
+
+.vue-treeselect__placeholder, .vue-treeselect__single-value{
+line-height: 42px;
+padding-left: .5rem;
+padding-right: .5rem;
+}
+
+.vue-treeselect__control-arrow{
+color: #333;
+}
+
+.vue-treeselect__label{
+font-weight: 300;
+}
+
+.vue-treeselect__label-container{
+padding: 5px 0;
+}
+
+.vue-treeselect__label-container:hover .vue-treeselect__checkbox--unchecked{
+border-color: #00628E;
+}
+
+.vue-treeselect__checkbox--checked, .vue-treeselect__checkbox--indeterminate, .vue-treeselect__label-container:hover .vue-treeselect__checkbox--checked, .vue-treeselect__label-container:hover .vue-treeselect__checkbox--indeterminate{
+background: #00628E;
+border-color: #00628E;
+}
+
+.vue-treeselect__menu{
+padding-top: .5rem;
+padding-bottom: .5rem;
+}
+.vue-treeselect--open-below .vue-treeselect__menu {
+border-radius: 0;
+}
