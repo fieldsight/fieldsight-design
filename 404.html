@@ -25,36 +25,106 @@
             vertical-align: middle;
             margin: 2em auto;
         }
-
-        h1 {
-            color: #555;
-            font-size: 2em;
-            font-weight: 400;
-        }
-
-        p {
+        .error404{
+            padding: 50px 30px 58px 30px;
             margin: 0 auto;
-            width: 280px;
+            width: 750px;
+            /* box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.1); */
+            text-align: center;
+            margin: 30px auto;
+            
+        }
+        .error-wrap{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+        }
+        .error404 strong {
+            display: block;
+            font-size: 75px;
+            line-height: 75px;
+            color: #00628E;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 5px 5px 1px #eaeaea;
+        }
+        .error404 strong span{
+            display: inline-block;
+            animation-name: floating;
+            -webkit-animation-name: floating;
+            animation-duration: 2s;
+            -webkit-animation-duration: 2s;
+            animation-iteration-count: infinite;
+            -webkit-animation-iteration-count: infinite;
+        }
+        
+        .error404 h5{
+            display: block;
+            font-size: 30px;
+            line-height: 30px;
+            color: #fc5661;
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+        .error404 h6{
+            display: block;
+            font-size: 16px;
+            color: #fc5661;
+            margin: 15px 0;
+        }
+        a.error-btn{
+            text-transform: capitalize;
+            border-radius: 4px;
+            background-color:#00628E;
+            color:#ffffff;
+            padding:5px 15px;
+            text-decoration: none;
+            margin-top:20px;
+            display: inline-block;
+            clear:both;
+        }
+        @keyframes floating {
+            0% {
+                transform: translateY(0%);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0%);
+            }
+            }
+            @-webkit-keyframes floating {
+            0% {
+                -webkit-transform: translateY(0%);
+            }
+            50% {
+                -webkit-transform: translateY(-10px);
+            }
+            100% {
+                -webkit-transform: translateY(0%);
+            }
         }
 
-        @media only screen and (max-width: 280px) {
-
-            body, p {
-                width: 95%;
-            }
-
-            h1 {
-                font-size: 1.5em;
-                margin: 0 0 0.3em;
-            }
-
-        }
+       
 
     </style>
 </head>
 <body>
-    <h1>Page Not Found</h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
+    <div class="error404">
+        <div class="error-wrap">
+                <div class="error-content">
+                    <strong>4<span>0</span>4 </strong>
+                    <h5>Oops ... Page Not found!</h5>
+                    <p>Try using the button below to go to main page of the site</p>
+                    <a href="index.html" class="error-btn">Back</a>
+                </div>
+                <div class="error-img">
+                    <img src="assets/img/404.svg" alt="404" />
+                </div>
+        </div>
+    </div>
 </body>
 </html>
 <!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
