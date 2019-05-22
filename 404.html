@@ -6,39 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
 
-        * {
-            line-height: 1.2;
-            margin: 0;
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+            margin:0;
         }
 
         html {
             color: #888;
-            display: table;
             font-family: sans-serif;
             height: 100%;
-            text-align: center;
-            width: 100%;
         }
 
         body {
-            display: table-cell;
-            vertical-align: middle;
-            margin: 2em auto;
+            margin:0;
+            padding:0;
+            
+        }
+        img{
+            max-width: 100%;
+            height: auto;
         }
         .error404{
-            padding: 50px 30px 58px 30px;
-            margin: 0 auto;
-            width: 750px;
+            padding: 50px;
+            margin: auto;
+            max-width: 800px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             /* box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.1);
             -webkit-box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.1); */
-            text-align: center;
-            margin: 30px auto;
             
         }
         .error-wrap{
          display: flex;
          justify-content: space-between;
          align-items: center;
+         flex-wrap: nowrap;
+        }
+        .error-content{
+            margin-right:30px;
         }
         .error404 strong {
             display: block;
@@ -104,6 +114,26 @@
             }
             100% {
                 -webkit-transform: translateY(0%);
+            }
+        }
+        @media screen and (max-width:500px){
+            .error404{
+                padding:0;
+                margin:0;
+                
+            }
+            .error404 h5{
+            font-size: 18px;
+            line-height: 30px;
+        }
+            .error-wrap{
+            flex-wrap: wrap;
+            padding: 30px;
+            text-align: center;
+            }
+            .error-content{
+                margin-bottom:30px;
+                margin-right:0;
             }
         }
 
