@@ -1,0 +1,109 @@
+.fieldsight-new{
+  .fieldsight-btn{
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 10px;
+    background: $color-blue;
+    color: $color-white;
+    box-shadow: none;
+    border:none;
+    text-transform: capitalize;
+    font-size:0.875rem;
+    cursor: pointer;
+    position: relative;
+    @include radius4;
+    @include anim05;
+    i{
+      margin-left:0.5rem;
+    }
+    &.small-btn{
+        height: 24px;
+        line-height: 24px;
+        display: inline-block;
+    }
+    &.approved-btn{
+      background: $color-green;
+    }
+    &.rejected-btn{
+      background: $color-red;
+    }
+    &.flagged-btn{
+      background: $color-yellow;
+      
+    }
+    // &.icon-btn{
+    //   padding:1px 5px;
+    //   height: auto;
+    //   i{
+    //     margin:0;
+    //   }
+    // }
+      
+      
+      
+    &:hover{
+        color:$color-white;
+        background-color: rgba($color-blue, 0.8);
+    }
+    &.approved-btn{
+      background-color: $color-green;
+    }
+    &.rejected-btn{
+      background-color: $color-red;
+    }
+    &.flagged-btn{
+      background-color: $color-yellow;
+    }
+    
+  }
+  button:focus{
+    box-shadow: none;
+    -webkit-outline:none;
+    outline:none;
+  }
+  .download{
+    color:$color-download;
+  }
+  .edit, strong.approved, .approved{
+    color:$color-green;
+  }
+  .hide{
+    color:$color-hide;
+  }
+  a.pending, strong.pending {
+    color:$color-blue;
+  }
+  a.approved, strong.approved{
+    color:$color-green;
+  }
+  a.flagged, strong.flagged, .flagged{
+    color:$color-yellow;
+  }
+  a.rejected, strong.rejected , .rejected{ 
+    color:$color-red;
+  }
+
+  .add-btn{
+    @include flexjust;
+    justify-content: center;
+    align-items: center;
+    @include clear;
+    a{
+      color:$color-blue;
+      font-weight: 500;
+      font-size: 0.875rem;
+      margin-left: 0.625rem;
+      span{
+        width:24px;
+        height: 24px;
+        line-height: 24px;
+        padding:5px;
+        background-color: $color-blue;
+        color:$color-white;
+        @include radius4;
+        margin-left:0.635rem;
+      }
+    }
+  }
+}

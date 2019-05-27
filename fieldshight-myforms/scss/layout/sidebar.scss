@@ -1,0 +1,31 @@
+.fieldsight-new{
+    .new-sidebar{
+      &.submission-sidebar{
+        .submission-header{
+          position: relative;
+          
+        }
+        .status-view{
+          margin:1rem 0;
+          a{
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            i{
+              margin-left:0.5rem;
+              font-size: 1.2rem;
+            }
+          }
+        }
+        .status{
+          label{
+            font-size:0.875rem;
+            text-transform: capitalize;
+            font-weight: 500;
+          }
+        }
+      }
+
+    }
+    
+  }

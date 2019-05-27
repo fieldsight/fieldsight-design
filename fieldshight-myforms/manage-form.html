@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SOCIAL MEDIA META -->
+    <meta property="og:description" content="Fieldsight">
+    <meta property="og:image" content="preview.html">
+    <meta property="og:site_name" content="Fieldsight">
+    <meta property="og:title" content="Fieldsight">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://naxa.com.np">
+
+    <!-- TWITTER META -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@Fieldsight">
+    <meta name="twitter:creator" content="@Fieldsight">
+    <meta name="twitter:title" content="Fieldsight">
+    <meta name="twitter:description" content="Fieldsight">
+    <meta name="twitter:image" content="preview.html">
+    
+    <!--title-->
+    <title>Fieldsight</title>
+    
+    <!-- faveicon start   -->
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+    
+    <!-- stylesheet start -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/line-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/nice-select.css">
+    <link rel="stylesheet" type="text/css" href="js/datatable/dataTables.bs4.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+    <body class="">
+        <div id="fieldsight-new" class="fieldsight-new">
+            <div id="main-container" class="minified">
+                <div class="container-fluid">
+                    <!-- breadcrumb start   -->
+                    <nav aria-label="breadcrumb" role="navigation">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/fieldsight/organization/">Teams</a></li>
+                            <li class="breadcrumb-item"><a href="/fieldsight/organization-dashboard/13/">Manage forms</a></li>
+                            
+                            <li class="breadcrumb-item active" aria-current="page">scheduled forms</li>
+                        </ol>
+                    </nav>
+                    <!-- main-content start   -->
+                    <main id="main-content">
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-4">
+                                <!-- left-sidebar start   -->
+                                <div class="left-sidebar new-sidebar sticky-top">
+                                    <div class="card">
+                                        <div class="card-header main-card-header">
+                                            <h5>Manage Forms</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="nav nav-tabs flex-column border-tabs" id="myTab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="site_type_tab" data-toggle="tab" href="#site_type" role="tab" aria-controls="site_type" aria-selected="false">General forms</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="site_info_tab" data-toggle="tab" href="#site_info" role="tab" aria-controls="site_info" aria-selected="true">scheduled forms</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="site_manage_tab" data-toggle="tab" href="#site_manage" role="tab" aria-controls="site_manage" aria-selected="false">staged forms</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="map_layer_tab" data-toggle="tab" href="#map_layer" role="tab" aria-controls="map_layer" aria-selected="false">survey forms</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-xl-9 col-lg-8">
+                                <!-- right content start   -->
+                                <div class="right-content">
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade" id="site_type" role="tabpanel" aria-labelledby="site_type_tab">
+                                            <div class="card">
+                                                <div class="card-header main-card-header">
+                                                    <h5>General Forms</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <table id="general_table" class="table  table-bordered  general_table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th >form title</th>
+                                                                <th >Responses</th>
+                                                                <th >Form Guide</th>
+                                                                <th >assigned date</th>
+                                                                <th >Default status</th>
+                                                                <th >Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="pending">Pending</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <t<tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="rejected">Rejected</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="flagged">Flagged</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="flagged">Flagged</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="rejected">Reject</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="pending">Pending</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <div class="tab-pane fade show active" id="site_info" role="tabpanel" aria-labelledby="site_info_tab">
+                                            <div class="card">
+                                                <div class="card-header main-card-header">
+                                                    <h5>Scheduled forms</h5>
+                                                    <div class="add-btn">
+                                                        <a href="#" data-tab="scheduled-popup">Add new <span><i class="la la-plus"></i></span></a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <table id="manage_table" class="table  table-bordered  manage_table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th >form title</th>
+                                                                <th >Responses</th>
+                                                                <th >Form Guide</th>
+                                                                <th >assigned date</th>
+                                                                <th >Default status</th>
+                                                                <th >Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="pending">Pending</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <t<tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="rejected">Rejected</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="flagged">Flagged</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="flagged">Flagged</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="rejected">Reject</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="pending">Pending</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="fieldsight-popup" id="scheduled-popup">
+                                                    <div class="popup-body">
+                                                        <div class="card">
+                                                            <div class="card-header main-card-header">
+                                                                <h5>Add information</h5>
+                                                                <span class="popup-close"><i class="la la-close"></i></span>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <form>
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control" placeholder="Attribute" />
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control" placeholder="Data Name" />
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <select class="wide">
+                                                                            <option selected>Type</option>
+                                                                            <option>Daily activity diary</option>
+                                                                            <option>Date</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <select class="wide">
+                                                                            <option selected>Question</option>
+                                                                            <option>Daily activity diary</option>
+                                                                            <option>Number of family member</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group pull-right no-margin">
+                                                                        <button type="submit" class="fieldsight-btn">Save</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <div class="tab-pane fade" id="site_manage" role="tabpanel" aria-labelledby="site_manage_tab">
+                                            <div class="card">
+                                                <div class="card-header main-card-header">
+                                                    <h5>Staged forms</h5>
+                                                    <div class="add-btn">
+                                                        <a href="#" data-tab="addStage-popup">Add stage <span><i class="la la-plus"></i></span></a>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div id="accordion" class="accordion">
+                                                        <div class="card no-boxshadow">
+                                                            <div class="card-header" id="heading-2">
+                                                                <h5>
+                                                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-2" aria-expanded="false"
+                                                                        aria-controls="collapse-2">
+                                                                        #1 General Inspection
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapse-2" class="collapse" data-parent="#accordion" aria-labelledby="heading-2">
+                                                                <div class="card-body">
+                                                                    <div class="add-btn pull-left">
+                                                                        <a href="#" data-tab="addStage-popup">Add substage <span><i class="la la-plus"></i></span></a>
+                                                                    </div>
+                                                                    <table id="substage1_table" class="table table-bordered substage1_table">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th >Substage Name</th>
+                                                                                <th >form Name</th>
+                                                                                <th >Responses</th>
+                                                                                <th >Form Guide</th>
+                                                                                <th >Weight</th>
+                                                                                <th >assigned date</th>
+                                                                                <th >Default status</th>
+                                                                                <th >Action</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Foundation (ALL structural typ.)</td>
+                                                                                <td>_1_foundation_v4</td>
+                                                                                <td>200</td>
+                                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                                <td>0</td>
+                                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                                <td>
+                                                                                    <a href="#" class="td-view-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-eye"> </i> </a>
+                                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="View"> <i class="la la-edit"> </i> </a>
+                                                                                    <a href="#" class="td-delete-btn" data-toggle="tooltip" data-placement="top" title="Delete"> <i class="la la-trash-o"> </i> </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Foundation (ALL structural typ.)</td>
+                                                                                <td>_1_foundation_v4</td>
+                                                                                <td>200</td>
+                                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                                <td>0</td>
+                                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                                <td>
+                                                                                    <a href="#" class="td-view-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-eye"> </i> </a>
+                                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="View"> <i class="la la-edit"> </i> </a>
+                                                                                    <a href="#" class="td-delete-btn" data-toggle="tooltip" data-placement="top" title="Delete"> <i class="la la-trash-o"> </i> </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Foundation (ALL structural typ.)</td>
+                                                                                <td>_1_foundation_v4</td>
+                                                                                <td>200</td>
+                                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                                <td>0</td>
+                                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                                <td>
+                                                                                    <a href="#" class="td-view-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-eye"> </i> </a>
+                                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="View"> <i class="la la-edit"> </i> </a>
+                                                                                    <a href="#" class="td-delete-btn" data-toggle="tooltip" data-placement="top" title="Delete"> <i class="la la-trash-o"> </i> </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Foundation (ALL structural typ.)</td>
+                                                                                <td>_1_foundation_v4</td>
+                                                                                <td>200</td>
+                                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                                <td>0</td>
+                                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                                <td>
+                                                                                    <a href="#" class="td-view-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-eye"> </i> </a>
+                                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="View"> <i class="la la-edit"> </i> </a>
+                                                                                    <a href="#" class="td-delete-btn" data-toggle="tooltip" data-placement="top" title="Delete"> <i class="la la-trash-o"> </i> </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Foundation (ALL structural typ.)</td>
+                                                                                <td>_1_foundation_v4</td>
+                                                                                <td>200</td>
+                                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                                <td>0</td>
+                                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                                <td>
+                                                                                    <a href="#" class="td-view-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-eye"> </i> </a>
+                                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="View"> <i class="la la-edit"> </i> </a>
+                                                                                    <a href="#" class="td-delete-btn" data-toggle="tooltip" data-placement="top" title="Delete"> <i class="la la-trash-o"> </i> </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Foundation (ALL structural typ.)</td>
+                                                                                <td>_1_foundation_v4</td>
+                                                                                <td>200</td>
+                                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                                <td>0</td>
+                                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                                <td>
+                                                                                    <a href="#" class="td-view-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-eye"> </i> </a>
+                                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="View"> <i class="la la-edit"> </i> </a>
+                                                                                    <a href="#" class="td-delete-btn" data-toggle="tooltip" data-placement="top" title="Delete"> <i class="la la-trash-o"> </i> </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Foundation (ALL structural typ.)</td>
+                                                                                <td>_1_foundation_v4</td>
+                                                                                <td>200</td>
+                                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                                <td>0</td>
+                                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                                <td>
+                                                                                    <a href="#" class="td-view-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-eye"> </i> </a>
+                                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="View"> <i class="la la-edit"> </i> </a>
+                                                                                    <a href="#" class="td-delete-btn" data-toggle="tooltip" data-placement="top" title="Delete"> <i class="la la-trash-o"> </i> </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Foundation (ALL structural typ.)</td>
+                                                                                <td>_1_foundation_v4</td>
+                                                                                <td>200</td>
+                                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                                <td>0</td>
+                                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                                <td>
+                                                                                    <a href="#" class="td-view-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-eye"> </i> </a>
+                                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="View"> <i class="la la-edit"> </i> </a>
+                                                                                    <a href="#" class="td-delete-btn" data-toggle="tooltip" data-placement="top" title="Delete"> <i class="la la-trash-o"> </i> </a>
+                                                                                </td>
+                                                                            </tr>
+                                                
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card mrt-30">
+                                                            <div class="card-header" id="heading-4">
+                                                                <h5>
+                                                                    <a class="collapsed" role="button" data-toggle="collapse" href="#collapse-4" aria-expanded="true"
+                                                                        aria-controls="collapse-4">
+                                                                        #2 First Tranche Inspection
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                            <div id="collapse-4" class="collapse show" data-parent="#accordion" aria-labelledby="heading-3">
+                                                                <div class="card-body">
+                                                                    <div class="add-btn pull-left">
+                                                                        <a href="#" data-tab="addStage-popup">Add substage <span><i class="la la-plus"></i></span></a>
+                                                                    </div>
+                                                                    <table id="substage2_table" class="table table-bordered substage2_table">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th >Substage Name</th>
+                                                                                <th >form Name</th>
+                                                                                <th >Responses</th>
+                                                                                <th >Form Guide</th>
+                                                                                <th >Weight</th>
+                                                                                <th >assigned date</th>
+                                                                                <th >Default status</th>
+                                                                                <th >Action</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Foundation (ALL structural typ.)</td>
+                                                                                <td>_1_foundation_v4</td>
+                                                                                <td>200</td>
+                                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                                <td>0</td>
+                                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                                <td>
+                                                                                    <a href="#" class="td-view-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-eye"> </i> </a>
+                                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="View"> <i class="la la-edit"> </i> </a>
+                                                                                    <a href="#" class="td-delete-btn" data-toggle="tooltip" data-placement="top" title="Delete"> <i class="la la-trash-o"> </i> </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Foundation (ALL structural typ.)</td>
+                                                                                <td>_1_foundation_v4</td>
+                                                                                <td>200</td>
+                                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                                <td>0</td>
+                                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                                <td>
+                                                                                    <a href="#" class="td-view-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-eye"> </i> </a>
+                                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="View"> <i class="la la-edit"> </i> </a>
+                                                                                    <a href="#" class="td-delete-btn" data-toggle="tooltip" data-placement="top" title="Delete"> <i class="la la-trash-o"> </i> </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Foundation (ALL structural typ.)</td>
+                                                                                <td>_1_foundation_v4</td>
+                                                                                <td>200</td>
+                                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                                <td>0</td>
+                                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                                <td>
+                                                                                    <a href="#" class="td-view-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-eye"> </i> </a>
+                                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="View"> <i class="la la-edit"> </i> </a>
+                                                                                    <a href="#" class="td-delete-btn" data-toggle="tooltip" data-placement="top" title="Delete"> <i class="la la-trash-o"> </i> </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Foundation (ALL structural typ.)</td>
+                                                                                <td>_1_foundation_v4</td>
+                                                                                <td>200</td>
+                                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                                <td>0</td>
+                                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                                <td>
+                                                                                    <a href="#" class="td-view-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-eye"> </i> </a>
+                                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="View"> <i class="la la-edit"> </i> </a>
+                                                                                    <a href="#" class="td-delete-btn" data-toggle="tooltip" data-placement="top" title="Delete"> <i class="la la-trash-o"> </i> </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Foundation (ALL structural typ.)</td>
+                                                                                <td>_1_foundation_v4</td>
+                                                                                <td>200</td>
+                                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                                <td>0</td>
+                                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                                <td>
+                                                                                    <a href="#" class="td-view-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-eye"> </i> </a>
+                                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="View"> <i class="la la-edit"> </i> </a>
+                                                                                    <a href="#" class="td-delete-btn" data-toggle="tooltip" data-placement="top" title="Delete"> <i class="la la-trash-o"> </i> </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Foundation (ALL structural typ.)</td>
+                                                                                <td>_1_foundation_v4</td>
+                                                                                <td>200</td>
+                                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                                <td>0</td>
+                                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                                <td>
+                                                                                    <a href="#" class="td-view-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-eye"> </i> </a>
+                                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="View"> <i class="la la-edit"> </i> </a>
+                                                                                    <a href="#" class="td-delete-btn" data-toggle="tooltip" data-placement="top" title="Delete"> <i class="la la-trash-o"> </i> </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Foundation (ALL structural typ.)</td>
+                                                                                <td>_1_foundation_v4</td>
+                                                                                <td>200</td>
+                                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                                <td>0</td>
+                                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                                <td>
+                                                                                    <a href="#" class="td-view-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-eye"> </i> </a>
+                                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="View"> <i class="la la-edit"> </i> </a>
+                                                                                    <a href="#" class="td-delete-btn" data-toggle="tooltip" data-placement="top" title="Delete"> <i class="la la-trash-o"> </i> </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>Foundation (ALL structural typ.)</td>
+                                                                                <td>_1_foundation_v4</td>
+                                                                                <td>200</td>
+                                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                                <td>0</td>
+                                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                                <td>
+                                                                                    <a href="#" class="td-view-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-eye"> </i> </a>
+                                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="View"> <i class="la la-edit"> </i> </a>
+                                                                                    <a href="#" class="td-delete-btn" data-toggle="tooltip" data-placement="top" title="Delete"> <i class="la la-trash-o"> </i> </a>
+                                                                                </td>
+                                                                            </tr>
+                                                
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="fieldsight-popup" id="addStage-popup">
+                                                    <div class="popup-body">
+                                                        <div class="card">
+                                                            <div class="card-header main-card-header">
+                                                                <h5>Add Stage</h5>
+                                                                <span class="popup-close"><i class="la la-close"></i></span>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <form class="flying-form">
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control" required/>
+                                                                        <label for="input">Stage Name</label>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control"  required />
+                                                                        <label for="input">Weight (%)</label>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <label>Multiple Substages ?</label>
+                                                                        <div class="custom-checkbox display-inline">
+                                                                            <div class="checkbox ">
+                                                                                <label>
+                                                                                    <input type="checkbox" name="checkYes" value="1" /><i class="helper"></i>Yes
+                                                                                </label>
+                                                                            </div>
+                                                                            <div class="checkbox ">
+                                                                                <label>
+                                                                                    <input type="checkbox" name="checkYes" value="1" /><i class="helper"></i>No
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                            <label>Multiple Substages ?</label>
+                                                                            <div class="custom-checkbox display-inline">
+                                                                                <div class="radiobox ">
+                                                                                    <label>
+                                                                                        <input type="radio" name="radioYes" /><i class="helper"></i>Yes
+                                                                                    </label>
+                                                                                </div>
+                                                                                <div class="radiobox ">
+                                                                                    <label>
+                                                                                        <input type="radio" name="radioYes" /><i class="helper"></i>No
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                            
+                                                                        </div>
+                                                                    
+                                                                    <div class="form-group">
+                                                                        <input type="text" class="form-control" required />
+                                                                        <label for="input">Substage name</label>
+                                                                    </div>
+                                                                    <div class="form-group select-option">
+                                                                        <label>Default status</label>
+                                                                        <select class="wide">
+                                                                            <option>Pending</option>
+                                                                            <option>Approved</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                        <Textarea class="form-control" required></Textarea>
+                                                                        <label for="Textarea">description</label>
+                                                                    </div>
+                                                                    
+                                                                    <div class="form-group">
+                                                                        <label>Types</label>
+                                                                        <select class="wide">
+                                                                            <option>BMC</option>
+                                                                            <option>MMC</option>
+                                                                            <option>RRC</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="form-group pull-right no-margin">
+                                                                        <button type="submit" class="fieldsight-btn">Save</button>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <div class="tab-pane fade" id="map_layer" role="tabpanel" aria-labelledby="map_layer_tab">
+                                            <div class="card">
+                                                <div class="card-header main-card-header">
+                                                    <h5>Survey forms</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <table id="survey_table" class="table  table-bordered  survey_table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th >form title</th>
+                                                                <th >Responses</th>
+                                                                <th >Form Guide</th>
+                                                                <th >assigned date</th>
+                                                                <th >Default status</th>
+                                                                <th >Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="pending">Pending</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <t<tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="rejected">Rejected</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="flagged">Flagged</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="approved">Approved</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="flagged">Flagged</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="rejected">Reject</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Retrofitting Go/No-Go with Measurement</td>
+                                                                <td>200</td>
+                                                                <td><a href="#"><i class="la la-book"></a></td>
+                                                                <td><time><i class="la la-clock-o"></i> 2018-10-02</time></td>
+                                                                <td><a href="#" class="pending">Pending</a></td>
+                                                                <td>
+                                                                    <a href="#" class="td-edit-btn" data-toggle="tooltip" data-placement="top" title="Edit"> <i class="la la-edit"> </i> </a>
+                                                                </td>
+                                                            </tr>
+                                
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+      
+    <!-- jquery library start -->   
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/jquery.nice-select.min.js"></script>
+    <script src="js/vendor/jquery.slimscroll.min.js"></script>
+    <script src="js/datatable/dataTables.min.js"></script>
+    <script src="js/datatable/custom-datatables.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
